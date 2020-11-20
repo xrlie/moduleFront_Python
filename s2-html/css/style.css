@@ -1,0 +1,46 @@
+* {
+    color: red
+}
+
+header h1{
+    color: purple;
+}
+
+article {
+    background-color: cyan;
+}
+
+.container-post {
+    border: 1px solid blueviolet;
+    background-color: blue;
+}
+
+.container-post {
+    background-color: royalblue;
+}
+
+#post-unique {
+    background-color: black;
+}
+
+.parrafo {
+    font-size: 25px;
+}
+
+/* Selector descendiente
+Todos los span que se encuentren
+dentro de la clase párrafo
+serán modificados por el códico
+que se encuentra acontinuación */
+.parrafo span{
+    color: black;
+}
+
+.element-change {
+    background-color: red;
+    color: white;
+}
+
+.element-change {
+    display: inline;
+}
