@@ -1,0 +1,70 @@
+* {
+    color: black;
+}
+
+header {
+    padding: 5px;
+    background-color: blue;
+    border: 3px solid crimson;
+    border-radius: 5px;
+}
+
+header strong {
+    color: white;
+}
+
+nav strong {
+    color: black
+}
+
+nav {
+    /* display: inline-block; */
+    background-color: orange;
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+    margin: 20px 5px 5px 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+main {
+    /* display: inline-block; */
+    background-color: salmon ;
+    border: 3px solid blue;
+    margin-top: 5px;
+}
+
+aside {
+    display: inline-block;
+    margin-top: 5px;
+    background-color: wheat;
+    border: 3px solid red;
+    border-radius: 5px;
+    /* padding-top: 50px;
+    padding-left: 2px;
+    padding-right: 70px; */
+    padding: 2px 70px 100px 2px;
+}
+
+article {
+    background-color: yellow;
+}
+
+.container-post {
+    margin: 10px 5px 5px 5px;
+    padding: 2px 50px 50px 2px;
+}
+
+footer strong {
+    color: white;
+}
+
+footer {
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: fuchsia;
+    padding: 5px;
+    padding-bottom: 50px;
+
+}
