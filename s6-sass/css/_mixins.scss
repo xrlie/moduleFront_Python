@@ -1,0 +1,12 @@
+@mixin styleButton($bg-color:rgba(0,0,255, 0.347), $height:25px) {
+    height: $height;
+    width: 30%;
+    border: none;
+    background-color: $bg-color;
+    color: $color-white;
+    border-radius: 50px;
+    &:hover{
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
