@@ -49,6 +49,28 @@ header.header .header-introduction {
     width: 60%;
     margin: 40px auto;
     padding: 55px 0;
+    display: flex;
+    align-items: center;
+}
+
+header.header .header-introduction p span {
+    color: #32bba4;
+    font-weight: bold;
+}
+
+header.header .header-introduction .wrapper-video {
+    position: relative;
+}
+
+header.header .header-introduction .wrapper-video .mockup {
+    /* box-shadow: 5px 5px 4px rgba(0,0,0, 0.5); */
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0, 0.5);
+}
+
+header.header .header-introduction .wrapper-video .video {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .wrapper-cards {
@@ -102,6 +124,7 @@ header.header .header-introduction {
 }
 
 /*
+///////Pseudoclases\\\\\\\\
     :active
     :focus
     :checked
