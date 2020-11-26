@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-box {
+    background-color: rgba(0,0,0, 0.5);
+    height: 100vh; /* viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+}
+
+.shape.color-1 {
+    background-color: lightblue;
+}
+
+.shape.color-2 {
+    background-color: rgb(0, 132, 255);
+}
+
+.shape.color-3 {
+    background-color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .shape {
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .flex-box {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .shape {
+        height: 300px;
+        border-radius: 50%;
+        margin: unset;
+    }
+}
+
+/* Section menú */
+.section-menu {
+    height: 100vh;
+}
+
+ul li {
+    list-style: none;
+}
+
+#checked-menu {
+    display: none;
+}
+
+.menu {
+    background-color: steelblue;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.menu ul li:not(last-of-type) {
+    border-bottom: 1px solid red;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#checked-menu:checked ~ .menu {
+    /* display: block */
+    height: auto; /* al utilizar auto se muere la transición*/
+    opacity: 1;
+}
+
+.icon-bar {
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        opacity: 1;
+        height: auto;
+    }
+
+    .icon-bar {
+        display: none;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu ul li {
+        border-right: 1px solid red;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+}
+
+/* Positions */
+.positions {
+    height: 100vh;
+}
+
+.contenedor {
+    width: 60%;
+    height: 400px;
+    margin: 50px auto;
+    border: 1px solid red;
+    position: relative;
+    /*position: relative Si agregamos este, el segundo artículo se ajusta*/
+}
+
+.article-relative {
+    width: 60%;
+    height: 200px;
+    background-color: rgba(0,0,0, 0.6);
+    position: relative;
+    top: 200px;
+}
+
+.article-absolute {
+    width: 60%;
+    height: 200px;
+    background-color: lightblue;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+/* .article-fixed {
+    width: 60%;
+    height: 200px;
+    background-color: lightgreen;
+    position: fixed;
+    top: 600px;
+    left: 200px;
+} */
+
+.nav {
+    height: 200px;
+    background-color: rgba(0,0,0, 00.6);
+    position: sticky;
+    top: 0px;
+}
+
+/* Ejercicio de Práctica*/
+
+.position-form {
+    margin: 10px 10px 0px 10px;
+    height: 50vh;
+    border: 1px solid red;
+    position: relative;
+    background-color: #ccc;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.position-form-2 {
+    margin: 0px 10px 10px 10px;
+    height: 45vh;
+    border: 1px solid red;
+    background-color: #ccc;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.form {
+    border: 2px solid steelblue;
+    background-color: lightblue;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+}
+
+.form-example {
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type=submit] {
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+    border-color: red;
+    box-shadow: 10px 5px 5px black;
+    transition: font-size 0.6s ease;
+}
+
+input:hover {
+    background-color: turquoise;
+    
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
